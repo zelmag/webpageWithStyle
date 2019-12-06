@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Webpage with Style</title>
+        <style type="text/CSS">
+           .red{
+               color: red; 
+           }
+           /*Classes can id more than 1 element. IDs are used once*/
+           .large{
+               font-size: 200%; 
+           }
+           #green{
+               color:green;
+           }
+           .underlined{
+               text-decoration: underline;
+           }
+           #first-section{
+               color:rgb(53, 53, 187);
+               background-color:rgb(56, 10, 10);
+               width:400px;
+               /*top right bottom left. clockwise */
+               margin: 100px 50px; /*margin all around box. top and botton to 100, left-right to 50 px*/
+               margin-left: 150px;
+               /* position: fixed; appear even as scroll*/ 
+               /*relative: relative to where it's at. 
+               absolute: same but not fixed when scroll. */
+               /*is ignored by others */
+                /*relative to where it would be */
+               /* left: 100px;
+               top: 100px;
+               z-index:1; for overlapping, z-index smaller at the bottom */
+           }
+           #yellow-back{
+               background-color: yellow;
+               width:200px;
+               position:relative;
+               z-index:2;
+               opacity: 0.75; /*the bigger, the less see through 0-1 */
+               margin: 50px 20px; /*50px top and bottom, 20px left and right */
+               margin-top: 50px;
+               margin-bottom: 50px;
+               margin-left: 20px;
+               margin-right: 20px;
+               padding: 5px 10px 15px 20px; 
+           }
+           body{
+               margin:0;
+               padding:0;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="first-section">
+            <!--Only to things of class "red"-->
+            <p>I like big butts.</p>
+            <p>And I cannot lie</p>
+        </div>
+        <div id="yellow-back">
+            <h1 class="red">CSS is cool</h1>
+            <p id="green">More text. <span class="underlined">Only this is underlined</span></p>
+        </div>
+        <div>
+            <p>This paragraph is not floated</p>
+        </div>
+    </body>
+</html>

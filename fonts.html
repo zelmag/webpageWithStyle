@@ -1,0 +1,49 @@
+<html>
+   <head>
+       <title>Fonts</title>
+       <style type="text/css">
+        .bold{
+            font-weight: bold;
+            /*fall back. if browser not have times new roman, it'll do times*/
+        }
+        .italic{
+            font-style: italic;
+            text-align: center;
+        }
+        .underlined{
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration:underline;
+            color:red;
+        }
+        .big{
+            font-size: 200%;
+        }
+        .formatted{
+            text-align: right;
+        }
+        div{
+            width: 300px;
+            background-color: blue;
+        }
+        .justified{
+            text-align:justify;
+        }
+       </style>
+   </head> 
+   <body>
+       <p class="bold">This is bold text</p>
+       <p class="italic"> This is italic. <span class="bold"> And this is bold and italic </span></p>
+       <p class="underlined">This text is underlined</p>
+       <a href="">Link!</a>
+       <p class="big">This text is BIG</p>
+       <div>
+         <p class="formatted">Text aligned</p>
+         <p class="justified">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+   </body>
+</html>
